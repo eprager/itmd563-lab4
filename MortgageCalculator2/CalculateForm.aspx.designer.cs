@@ -15,15 +15,6 @@ namespace MortgageCalculator2
     {
 
         /// <summary>
-        /// PageHeader control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::MortgageCalculator2.WebUserControl1 PageHeader;
-
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -33,13 +24,22 @@ namespace MortgageCalculator2
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// princ control.
+        /// Princ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox princ;
+        protected global::System.Web.UI.WebControls.TextBox Princ;
+
+        /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
         /// duration control.

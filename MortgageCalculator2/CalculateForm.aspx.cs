@@ -12,12 +12,12 @@ namespace MortgageCalculator2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            princ.Focus();
+            
         }
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            string principal = "" + princ.Text + "";
+            string principal = "" + Princ.Text + "";
             string duration = "" + LoanDur.Text + "";
             string rate = "" + InterestRate.Text + "";
             string otherDuration = "" + otherBox.Text + "";
@@ -28,6 +28,8 @@ namespace MortgageCalculator2
 
             IDataHelper io = new IOHelper();
             io.WriteMortgage(output);
+
+            Princ.Focus();
         }
 
         
@@ -46,6 +48,7 @@ namespace MortgageCalculator2
             {
                 otherBox.Enabled = false;
                 otherBox.Text = String.Empty;
+                Princ.Focus();
             }
         }
     }

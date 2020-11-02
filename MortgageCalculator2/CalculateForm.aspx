@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="Mortgage Calculator" Language="C#" MasterPageFile="~/SiteMaster1.Master" AutoEventWireup="true" Async="true" CodeBehind="CalculateForm.aspx.cs" Inherits="MortgageCalculator2.Calculate" %>
 
-<%@ Register Src="~/PageHeader.ascx" TagPrefix="uc1" TagName="PageHeader" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <title>Mortgage Calculator</title>
@@ -14,26 +12,28 @@
 
     <form id="form1">
 
-        <uc1:PageHeader runat="server" id="PageHeader" />
-
         <h2>Calculate Mortgage Monthly Payment</h2>
 
         <div>
-            <asp:Label ID="Label1" AssociatedControlID="princ" runat="server" Text="Please enter the principle amount "></asp:Label>
-            <asp:TextBox ID="princ" runat="server"></asp:TextBox>
+            <asp:Label ID="Label1" AssociatedControlID="Princ" runat="server" Text="Please enter the principle amount "></asp:Label>
+            <asp:TextBox ID="Princ" runat="server"></asp:TextBox>
 
             <br />
             <br />
 
-            <asp:Label ID="duration" runat="server" AssociatedControlID="LoanDur" Text="Please enter the loan duration in years"></asp:Label>
-            <asp:RadioButtonList ID="LoanDur" runat="server" AutoPostBack="true" OnSelectedIndexChanged="LoanDur_SelectedIndexChanged">
-                <asp:ListItem Value="15" Selected="True">15 Years</asp:ListItem>
-                <asp:ListItem Value="30">30 Years</asp:ListItem>
-                <asp:ListItem Value="Other">Other</asp:ListItem>
-            </asp:RadioButtonList>
+            <asp:UpdatePanel ID="UpdatePanel1" updateMode="Conditional" runat="server">
+                <ContentTemplate>
+                    <asp:Label ID="duration" runat="server" AssociatedControlID="LoanDur" Text="Please enter the loan duration in years"></asp:Label>
+                    <asp:RadioButtonList ID="LoanDur" runat="server" AutoPostBack="true" OnSelectedIndexChanged="LoanDur_SelectedIndexChanged">
+                        <asp:ListItem Value="15" Selected="True">15 Years</asp:ListItem>
+                        <asp:ListItem Value="30">30 Years</asp:ListItem>
+                        <asp:ListItem Value="Other">Other</asp:ListItem>
+                    </asp:RadioButtonList>
             
-            <asp:Label ID="Label2" AssociatedControlID="otherBox" runat="server" Text=""></asp:Label>
-            <asp:TextBox ID="otherBox" Enabled="false" runat="server" style="margin-left: 81px"></asp:TextBox>
+                    <asp:Label ID="Label2" AssociatedControlID="otherBox" runat="server" Text=""></asp:Label>
+                    <asp:TextBox ID="otherBox" Enabled="false" runat="server" style="margin-left: 81px"></asp:TextBox>
+                </ContentTemplate>
+            </asp:UpdatePanel>
 
             <br />
             <br />

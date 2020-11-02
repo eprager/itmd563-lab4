@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster1.master.cs" Inherits="MortgageCalculator2.SiteMaster1" %>
 
+<%@ Register Src="~/PageHeader.ascx" TagPrefix="uc1" TagName="PageHeader" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -10,9 +12,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <uc1:PageHeader runat="server" id="PageHeader" />
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
+                <ContentTemplate>
+                    <asp:Timer ID="Timer1" runat="server" interval="1000" OnTick="Timer1_Tick"></asp:Timer>
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                </ContentTemplate>
+            </asp:UpdatePanel>
         </div>
     </form>
 </body>
