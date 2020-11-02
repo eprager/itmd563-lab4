@@ -4,19 +4,24 @@
 
 <hr />
 
-<asp:Menu ID="Menu1" Orientation="Horizontal" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" StaticSubMenuIndent="10px">
-    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
-    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-    <DynamicMenuStyle BackColor="#FFFBD6" />
-    <DynamicSelectedStyle BackColor="#FFCC66" />
+<asp:Menu ID="Menu1" Orientation="Horizontal" runat="server" StaticSubMenuIndent="10px" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666">
+    <DynamicHoverStyle BackColor="#666666" ForeColor="White"></DynamicHoverStyle>
+
+    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"></DynamicMenuItemStyle>
+
+    <DynamicMenuStyle BackColor="#E3EAEB"></DynamicMenuStyle>
+
+    <DynamicSelectedStyle BackColor="#1C5E55"></DynamicSelectedStyle>
     <Items>
         <asp:MenuItem Text="Calc Mortgage" Value="Calc Mortgage" NavigateUrl="~/CalculateForm.aspx"></asp:MenuItem>
         <asp:MenuItem Text="List Mortgages" Value="List Mortgages" NavigateUrl="~/ListMortgages.aspx"></asp:MenuItem>
         <asp:MenuItem Text="Clear Mortgages" Value="Clear Mortgages" NavigateUrl="~/ClearMortgages.aspx"></asp:MenuItem>
     </Items>
-    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
-    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
-    <StaticSelectedStyle BackColor="#FFCC66" />
+    <StaticHoverStyle BackColor="#666666" ForeColor="White"></StaticHoverStyle>
+
+    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"></StaticMenuItemStyle>
+
+    <StaticSelectedStyle BackColor="#1C5E55"></StaticSelectedStyle>
     <StaticItemTemplate>
         <%# Eval("Text") %>
     </StaticItemTemplate>

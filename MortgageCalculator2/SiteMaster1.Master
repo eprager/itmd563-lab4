@@ -11,13 +11,23 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+
     <form id="form1" runat="server">
+
+    <header style="background:  #1abc9c; border-style: ridge">
+        <asp:Label ID="Label2" runat="server" Text="Master Page" ForeColor="#FFFFFF" style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;"></asp:Label>
+        <hr />
+    </header>
+
         <uc1:PageHeader runat="server" id="PageHeader" />
         <asp:ScriptManager runat="server"></asp:ScriptManager>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+        <br />
+
         <div>
             <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
                 <ContentTemplate>
@@ -27,5 +37,10 @@
             </asp:UpdatePanel>
         </div>
     </form>
+
+    <footer style="background:  #1abc9c; border-style: ridge">
+        <asp:Label ID="Label3" runat="server" Text="Copyright Prager 2020" style="font-size: small; color: #FFFFFF; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"></asp:Label>
+    </footer>
+
 </body>
 </html>

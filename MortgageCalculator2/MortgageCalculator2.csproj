@@ -73,7 +73,6 @@
     <Content Include="ListMortgages.aspx" />
     <Content Include="PageHeader.ascx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculateForm.aspx.cs">
@@ -117,13 +116,6 @@
     </Compile>
     <Compile Include="SiteMaster1.Master.designer.cs">
       <DependentUpon>SiteMaster1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
