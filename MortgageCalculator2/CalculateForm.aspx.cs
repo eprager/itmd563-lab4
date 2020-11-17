@@ -26,7 +26,8 @@ namespace MortgageCalculator2
             string output = MortgageHelper.ValidateMortgage(principal, duration, rate, otherDuration);
             result.Text = output;
 
-            IDataHelper io = new IOHelper();
+            //IDataHelper io = new IOHelper();
+            IDataHelper io = new IOHelper_Database();
             io.WriteMortgage(output);
 
             Princ.Focus();

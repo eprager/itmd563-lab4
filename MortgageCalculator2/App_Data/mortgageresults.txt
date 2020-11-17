@@ -1,5 +1,1 @@
-With a principal of $100000, duration of 30 years, and an interest rate of 1%, the monthly loan payment amount is $321.64.
-With a principal of $2000, duration of 30 years, and an interest rate of 0.75%, the monthly loan payment amount is $6.21.
-With a principal of $2000, duration of 15 years, and an interest rate of 0.25%, the monthly loan payment amount is $11.32.
-Please enter input for all values
-With a principal of $2000, duration of 15 years, and an interest rate of 0.25%, the monthly loan payment amount is $11.32.
+With a principal of $100050, duration of 15 years, and an interest rate of 5.25%, the monthly loan payment amount is $804.28.

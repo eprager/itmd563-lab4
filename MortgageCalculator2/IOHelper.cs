@@ -42,17 +42,13 @@ namespace MortgageCalculator2
         }
 
         public void WriteMortgage(String output)
-        { 
-            output = output + "\n";
-            try
-            {
-                File.AppendAllText(pathAndFile, output);
-            }
-            catch (IOException e)
-            {
-                //error
-            }
-            
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WriteMortgage(string formattedMonthString, float princ, float interest, float duration, float monthly)
+        {
+            throw new NotImplementedException();
         }
     }
 }

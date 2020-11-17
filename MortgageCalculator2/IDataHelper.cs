@@ -10,6 +10,7 @@ namespace MortgageCalculator2
     {
 
         void WriteMortgage(string month);
+        void WriteMortgage(string formattedMonthString, float princ, float interest, float duration, float monthly);
 
         String GetAllMortgages();
 

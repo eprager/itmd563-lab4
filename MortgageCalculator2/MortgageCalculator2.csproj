@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\mortgageresults.txt" />
     <Content Include="CalculateForm.aspx" />
     <Content Include="ClearMortgages.aspx" />
     <Content Include="Global.asax" />
@@ -93,6 +94,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="IDataHelper.cs" />
+    <Compile Include="IOHelper_Database.cs" />
     <Compile Include="IOHelper.cs" />
     <Compile Include="ListMortgages.aspx.cs">
       <DependentUpon>ListMortgages.aspx</DependentUpon>
@@ -129,7 +131,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

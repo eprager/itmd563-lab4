@@ -16,7 +16,8 @@ namespace MortgageCalculator2
 
         protected void list_Click(object sender, EventArgs e)
         {
-            IDataHelper io = new IOHelper();
+            //IDataHelper io = new IOHelper();
+            IDataHelper io = new IOHelper_Database();
             Mortgages.Text = io.GetAllMortgages();
         }
     }
